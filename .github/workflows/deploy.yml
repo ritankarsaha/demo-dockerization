@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Kamal CLI
+        run: gem install kamal
+
+      - name: Deploy with Kamal
+        run: |
+          kamal deploy --config config/deploy.yml

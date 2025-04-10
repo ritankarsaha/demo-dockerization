@@ -1,0 +1,16 @@
+{
+  "name": "Enhanced Sample Project",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+
+  "workspaceFolder": "/app",
+
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "rebornix.ruby",
+    "dbaeumer.vscode-eslint"
+  ],
+  "postCreateCommand": "bundle install"
+}
