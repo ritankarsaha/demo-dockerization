@@ -1,0 +1,9 @@
+service: myapp
+image: myusername/myapp:latest
+
+servers:
+  - host: production-server.example.com
+    user: deploy
+
+environment:
+  DATABASE_URL: postgres://postgres:password@production-database:5432/myapp
