@@ -20,8 +20,8 @@ Follow these steps to get the application up and running on your local machine.
 If you haven't already cloned the repository, you can do so with the following command:
 
 ```bash
-git clone <your-repository-url>
-cd <your-project-directory>
+git clone https://github.com/ritankarsaha/demo-dockerization.git
+cd demo-dockeriation
 ```
 
 2. Build the Docker Images
